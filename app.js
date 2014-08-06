@@ -1,6 +1,5 @@
 var Youtube = require("youtube-api");
 var express = require("express");
-var fs = require("fs");
 
 Youtube.authenticate({
 	type: "key",
