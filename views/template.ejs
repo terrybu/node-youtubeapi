@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="YouTube">
+<head>
+	<title><%= title %></title>
+	<link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<script type="text/javascript" href="/bower_components/angular/angular.min.js"></script>
+	<script type="text/javascript" href="controller.js"></script>
+</head>
+
+<body>
+
+<div class="container" ng-controller="ContentCtrl">
+	<h1>YouTube Videos</h1>
+	<ul>
+		<li ng-repeat="video in content">
+			{{video.snippet.title}}
+		</li>
+	</ul>
+</div>
+
+
+
+
+
+<script type="text/javascript" src ="/bower_components/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/bower_components\bootstrap\dist\js
+\bootstrap.min.js"></script>
+</body>
+</html>

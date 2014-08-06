@@ -2,13 +2,14 @@
   "name": "youtube-api",
   "version": "0.0.0",
   "description": "testing out how to get youtube api data and displaying them to a web browser",
-  "main": "express.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Terry Bu",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^1.0.0",
     "express": "^4.8.0"
   }
 }
