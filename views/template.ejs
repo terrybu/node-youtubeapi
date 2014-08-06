@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html ng-app="YouTubeApp">
+<html>
 <head>
 	<title><%= title %></title>
 	<link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
 	<script type="text/javascript" href="/bower_components/angular/angular.min.js"></script>
-	<script type="text/javascript" href="controller.js"></script>
 </head>
 
 <body>
 
-<div class="container" ng-controller="ContentCtrl">
+<div class="container">
 	<h1>YouTube Videos</h1>
+	<hr>
 	<ul>
-	{{test}}
-		<li ng-repeat="video in content">
-			{{video.snippet.title}}
+		<% for (var i=0; i < content.length; i++) { %>
+		<li>
+			<%= content[i].snippet.title %>
 		</li>
+		<% } %>
 	</ul>
 </div>
 

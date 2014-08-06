@@ -8,9 +8,11 @@ Youtube.authenticate({
 var content;
 var test;
 Youtube.search.list({
-    "part": "snippet",
-    "q": '런닝맨',
-    "maxResults": 5
+    "part": "id, snippet",
+    "q": 'Egg Fried Rice',
+    "order": "viewCount",
+    "maxResults": 10,
+    "chart": 'mostPopular'
 }, function (err, data) {
 	content = data.items;
     console.log(content);
