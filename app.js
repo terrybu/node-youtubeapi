@@ -49,5 +49,5 @@ app.get("/content", function(req, res) {
     res.json(content);
 });
 
-app.listen(3000);
+app.listen(process.env.PORT || 5000)
 console.log("Server running");
