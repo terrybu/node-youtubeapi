@@ -11,7 +11,7 @@ var content;
 var real_content = [];
 Youtube.search.list({
     "part": "id, snippet",
-    "q": 'Egg Fried Rice',
+    "q": 'Teriyaki Salmon',
     "order": "viewCount",
     "maxResults": 3,
     "chart": 'mostPopular'
