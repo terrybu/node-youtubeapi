@@ -14,7 +14,12 @@
 	<ul>
 		<% for (var i=0; i < content.length; i++) { %>
 		<li>
-			<%= content[i].snippet.title %>
+			<p><%= content[i].snippet.title %></p>
+			<p><%= content[i].id.videoId %></p>
+			<p><%- link_to('Video Link', 'https://www.youtube.com/watch?v='+content[i].id.videoId)%></p>
+			<p>****REAL CONTENT TESTING***</p>
+			<p><%= real_content[i].items[0].id %></p>
+			<p><%= real_content[i].items[0].statistics.viewCount %></p>
 		</li>
 		<% } %>
 	</ul>
