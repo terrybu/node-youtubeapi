@@ -41,8 +41,12 @@ app.get("/", function(req, res) {
     });
 });
 
-app.get("/test", function(req, res) {
+app.get("/realcontent", function(req, res) {
     res.json(real_content);
+});
+
+app.get("/content", function(req, res) {
+    res.json(content);
 });
 
 app.listen(3000);
