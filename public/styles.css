@@ -28,6 +28,10 @@ li:nth-child(even) {
 	background: lightgrey;
 }
 
+li:hover {
+	background-color: orange;
+}
+
 b {
 	font-size: .75em;
 	margin: 5px;

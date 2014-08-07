@@ -13,7 +13,7 @@ Youtube.search.list({
     "part": "id, snippet",
     "q": 'Teriyaki Salmon',
     "order": "viewCount",
-    "maxResults": 5,
+    "maxResults": 10,
     "chart": 'mostPopular'
 }, function (err, data) {
 	content = data.items;
