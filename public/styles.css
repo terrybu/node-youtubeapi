@@ -1,0 +1,34 @@
+h1 {
+	background-color: orange;
+	border: 2px grey;
+	border-radius: 50px;
+	border-style: double;
+	padding: 20px;
+}
+
+div.jumbotron {
+	margin: 5px;
+	padding: 2px;
+	background-color: black;
+}
+
+div.jumbotron p {
+	color: white;
+}
+
+ul {
+}
+
+li {
+	border-bottom: 1px dotted black;
+	list-style-image: url("fish.gif");
+}
+
+li:nth-child(even) {
+	background: lightgrey;
+}
+
+b {
+	font-size: .75em;
+	margin: 5px;
+}

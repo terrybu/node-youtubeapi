@@ -3,26 +3,27 @@
 <head>
 	<title><%= title %></title>
 	<link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
 	<script type="text/javascript" href="/bower_components/angular/angular.min.js"></script>
 </head>
 
 <body>
 
 <div class="container">
-	<h1>YouTube Videos API('Searching for Most Popular Teriyaki Salmon Videos with Node and Express')</h1>
+	<div class="jumbotron">
+	<h1>You are About to Get Hungry</h1>
+	<p>Here's Top 5 Most Popular 'Teriyaki Salmon' Videos on YouTube!  (Node, Ejs and Express)</p>
+	</div>
 	<hr>
 	<ul>
 		<% for (var i=0; i < content.length; i++) { %>
 		<li>
-			<p><%= content[i].snippet.title %></p>
-			<p><%= content[i].id.videoId %></p>
-			<p><%- link_to('Video Link', 'https://www.youtube.com/watch?v='+content[i].id.videoId)%></p>
-			<p>****REAL CONTENT TESTING***</p>
-			<p><%= real_content[i].items[0].id %></p>
-			<p><%= real_content[i].items[0].statistics.viewCount %></p>
+			<h2><%= content[i].snippet.title %></h2>
+			<iframe width="420" height="315" src="//www.youtube.com/embed/<%=content[i].id.videoId%>" frameborder="0" allowfullscreen></iframe>
 		</li>
 		<% } %>
 	</ul>
+<blockquote>Happy cooking!</blockquote>
 </div>
 
 <script type="text/javascript" src ="/bower_components/jquery/dist/jquery.js"></script>

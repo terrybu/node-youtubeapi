@@ -1,7 +1,7 @@
 var Youtube = require("youtube-api");
 var express = require("express");
-var myModule = require("./simple_http_request.js");
-var _ = require('underscore');
+// var myModule = require("./simple_http_request.js");
+// var _ = require('underscore');
 
 Youtube.authenticate({
 	type: "key",
@@ -13,16 +13,16 @@ Youtube.search.list({
     "part": "id, snippet",
     "q": 'Teriyaki Salmon',
     "order": "viewCount",
-    "maxResults": 3,
+    "maxResults": 5,
     "chart": 'mostPopular'
 }, function (err, data) {
 	content = data.items;
 	// console.log(_.isArray(content)); //true meaning that content is an ARRAY so underscore's each is not what's messing up the order for real_content
-	_.each(content, function(object) {
-		myModule.call_stats(object.id.videoId, function(data) {
-			real_content.push(data);
-		});	
-	});
+	// _.each(content, function(object) {
+	// 	myModule.call_stats(object.id.videoId, function(data) {
+	// 		real_content.push(data);
+	// 	});	
+	// });
 });
 
 
