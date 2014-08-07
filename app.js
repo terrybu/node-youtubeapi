@@ -27,7 +27,7 @@ Youtube.search.list({
 
 
 var app = express();
-var helpers = require('express-helpers')(app);
+// var helpers = require('express-helpers')(app);
 
 app.set('views', __dirname + '/views');
 app.use(express.static(__dirname + '/public'));

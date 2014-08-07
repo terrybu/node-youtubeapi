@@ -1,5 +1,8 @@
 # Created by http://www.gitignore.io
 
+node_modules/
+
+
 ### Node ###
 # Logs
 logs
